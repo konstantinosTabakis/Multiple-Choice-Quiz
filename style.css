@@ -1,0 +1,113 @@
+:root{
+    --primary-color:#346751;
+    --second-color:#f1ece0;
+    --third-color:#161616;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--second-color);
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/23/22/grunge-2698951_960_720.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#title{
+    font-style: italic;
+    font-size: 1.4rem;
+    letter-spacing: .1rem;
+    margin-bottom:20px ;
+    color: #d6ad55;
+}
+#text{
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--second-color);
+    margin-bottom:30px ;
+
+}
+.btn{
+    padding: 5px 50px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--second-color);
+    font-size: 1.2rem;
+}
+button{
+    background-color: var(--primary-color);
+}
+h2{
+    margin-bottom: 40px;
+    
+}
+.message{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.question{
+    margin:0 30px 30px 0;
+    background-color: var(--second-color);
+    color: var(--third-color);
+    padding: 5px 15px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 3px 12px 41px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 12px 41px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 12px 41px -5px rgba(0,0,0,0.75);
+    letter-spacing: 1px;
+}
+.checked{
+    background-color: var(--third-color);
+    color: var(--second-color);
+}
+
+.indexQuestion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.863);
+    color: black;
+    padding: 10px 50px;
+    font-size: 1.5rem;
+    width: auto;
+}
+
+.flex{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+     max-width: 670px;
+    flex-wrap: wrap;
+}
+
+@media screen and  ( max-width: 450px){
+    #text{
+        font-size: 1.1rem;
+    }
+    .btn{
+        padding: 5px 30px;
+    }
+    .indexQuestion{
+        font-size: 1rem;
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .question{
+        width: 100%;
+    }
+    h2{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
