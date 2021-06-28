@@ -7,6 +7,9 @@ btn.addEventListener("click", ()=>{
     document.getElementById("title").style.display="none"
     document.getElementById("text").style.display="none"
     btn.style.display="none"
+    let retrieving =document.createElement("div")
+    retrieving.innerHTML="Retrieving Data..."
+    container.appendChild(retrieving)
     gameStart()
 })
 
